@@ -73,10 +73,13 @@ select {
   margin-bottom: 4px;
 }
 
-.tile.tile-title {
+.tile-title {
   font-weight: bold;
 }
 
 .tile-container {
+  text-align: center;
   margin-bottom: 20px;
+  border: 2px solid #03a8d8;
+  border-radius: 4px;
 }
