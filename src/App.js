@@ -13,9 +13,9 @@ function App() {
     APPOINTMENTS: "/appointments",
   };
 
-  const addContact = newContact => setContacts([newContact, ...contacts]);
+  const addContact = newContact => setContacts(prev => ([newContact, ...prev]));
 
-  const addAppointment = newAppointment => setAppointments([newAppointment, ...appointments]);
+  const addAppointment = newAppointment => setAppointments(prev => [newAppointment, ...prev]);
 
   return (
     <>

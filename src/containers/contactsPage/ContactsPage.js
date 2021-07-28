@@ -28,7 +28,6 @@ export const ContactsPage = props => {
   }, [name]);
 
   const checkName = nameToCheck => {
-      console.log("let's check")
       for (const contact of props.contacts) {
           if (contact.name === nameToCheck){
               console.log("There is someone with this name already");
