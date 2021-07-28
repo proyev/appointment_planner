@@ -40,6 +40,7 @@ function App() {
           <Route path={ROUTES.APPOINTMENTS}>
             <AppointmentsPage appointments={appointments}
                               addAppointment={addAppointment}
+                              contacts={contacts}
             />
           </Route>
         </Switch>
