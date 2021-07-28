@@ -30,7 +30,6 @@ export const ContactsPage = props => {
   const checkName = nameToCheck => {
       for (const contact of props.contacts) {
           if (contact.name === nameToCheck){
-              console.log("There is someone with this name already");
               return false;
           }
       }
@@ -40,7 +39,7 @@ export const ContactsPage = props => {
   return (
     <div>
       <section>
-        <h2>Add Contact</h2>
+        <h2>Add Contact{!checkName(name) && <span> - Such Contact Already Exists</span>}</h2>
         <ContactForm name={name}
                      setName={setName}
                      phone={phone}
